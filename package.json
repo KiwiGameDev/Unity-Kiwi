@@ -1,0 +1,16 @@
+{
+  "name": "com.kiwi.kiwi",
+  "version": "0.0.1",
+  "displayName": "Kiwi",
+  "description": "A collection of common core utilities in Unity.",
+  "unity": "2019.4",
+  "unityRelease": "8f1",
+  "keywords": [
+    "tool"
+  ],
+  "author": {
+    "name": "Kiwi",
+    "email": "",
+    "url": "https://kiwigamedev.github.io/"
+  }
+}
