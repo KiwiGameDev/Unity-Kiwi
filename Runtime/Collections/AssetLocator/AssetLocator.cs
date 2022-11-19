@@ -4,7 +4,11 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Kiwi.Utils
+#if UNITY_EDITOR
+using Kiwi.Data.Automation.Editor;
+#endif
+
+namespace Kiwi.Data.Automation
 {
 	public abstract class AssetLocator<T> : ScriptableObject where T : Object
 	{
