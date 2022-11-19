@@ -1,4 +1,4 @@
-﻿using Kiwi.Utils;
+﻿using Kiwi.Data.Automation;
 using TMPro;
 using UnityEngine;
 
@@ -17,7 +17,22 @@ public class DebugAssetLocatorDisplay : MonoBehaviour
 		foreach (SampleAsset sampleAsset in assetLocator.Assets)
 		{
 			assetsCountText.text += sampleAsset.Name;
-			assetsCountText.text += '\n';
+			assetsCountText.text += " | { ";
+
+			if (sampleAsset.Position.Enabled)
+			{
+				assetsCountText.text += sampleAsset.Position.Value.x;
+				assetsCountText.text += " , ";
+				assetsCountText.text += sampleAsset.Position.Value.y;
+				assetsCountText.text += " , ";
+				assetsCountText.text += sampleAsset.Position.Value.z;
+			}
+			else
+			{
+				assetsCountText.text += "Disabled!";
+			}
+
+			assetsCountText.text += " }\n";
 		}
 	}
 }

@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: SampleAsset_01
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Sample Asset 1
+  <Position>k__BackingField:
+    <Enabled>k__BackingField: 1
+    <Value>k__BackingField: {x: 1, y: 1, z: 1}

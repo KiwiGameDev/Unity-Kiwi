@@ -2,7 +2,7 @@
 using System;
 using UnityEditor;
 
-namespace Kiwi.Utils
+namespace Kiwi.Data.Automation.Editor
 {
 	class AssetLocatorSaver : AssetPostprocessor
 	{
