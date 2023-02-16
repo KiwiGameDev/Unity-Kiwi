@@ -1,4 +1,4 @@
-using Kiwi.Data.Automation;
+using Kiwi.Data.Collections.Automations;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "SampleAutoAssetLocator")]
