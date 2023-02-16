@@ -1,7 +1,7 @@
 ﻿using Kiwi.Data;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SampleAssetWithOptionals")]
+[CreateAssetMenu(menuName = "Kiwi/Sample Asset with Optionals")]
 public class SampleAssetWithOptionals : ScriptableObject
 {
     [SerializeField] Optional<int> testInt;
