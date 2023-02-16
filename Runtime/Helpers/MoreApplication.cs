@@ -6,28 +6,28 @@ using UnityEditor;
 
 namespace Kiwi.Helpers
 {
-	public static class MoreApplication
-	{
+    public static class MoreApplication
+    {
 #if UNITY_EDITOR
-		[InitializeOnEnterPlayMode]
-		static void EnterPlayMode(EnterPlayModeOptions options)
-		{
-			IsQuitting = false;
-		}
+        [InitializeOnEnterPlayMode]
+        static void EnterPlayMode(EnterPlayModeOptions options)
+        {
+            IsQuitting = false;
+        }
 #endif
 
-		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
-		static void RunOnStart()
-		{
-			IsQuitting = false;
-			Application.quitting += Quit;
-		}
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
+        static void RunOnStart()
+        {
+            IsQuitting = false;
+            Application.quitting += Quit;
+        }
 
-		static void Quit()
-		{
-			IsQuitting = true;
-		}
+        static void Quit()
+        {
+            IsQuitting = true;
+        }
 
-		public static bool IsQuitting { get; private set; }
-	}
+        public static bool IsQuitting { get; private set; }
+    }
 }
