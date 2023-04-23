@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AssetLocator/Scenes/AssetLocator.unity
     guid: d86bf6c7cdf1f604091981c5bfe14a38
+  - enabled: 1
+    path: Assets/DirtyFlag/Scenes/DirtyFlag.unity
+    guid: 6ce23d54069f30f45b3cfe514e25efef
   m_configObjects: {}
