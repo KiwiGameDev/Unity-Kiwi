@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Kiwi.Data.Collections.SerializableDictionary
+namespace Kiwi.Data.Collections
 {
     [Serializable]
     public class SerializableDictionary<TKey, TValue> : Catalog<TKey, SerializableDictionary<TKey, TValue>.Pair>, ISerializationCallbackReceiver

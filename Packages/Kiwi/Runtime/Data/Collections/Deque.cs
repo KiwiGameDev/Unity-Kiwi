@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Kiwi.Extensions;
 using UnityEngine;
 
-namespace Kiwi.Data.Collections.Deque
+namespace Kiwi.Data.Collections
 {
     /// <summary>
     /// sourced from: https://github.com/tejacques/Deque

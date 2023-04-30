@@ -1,0 +1,14 @@
+{
+    "name": "Kiwi.Data",
+    "rootNamespace": "Kiwi",
+    "references": ["GUID:9a3df3b329c5e08469a6a38f351e7c9a"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
