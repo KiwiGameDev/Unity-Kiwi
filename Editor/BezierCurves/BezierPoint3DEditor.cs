@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEditor;
 
 namespace Kiwi.Editor
@@ -117,3 +118,4 @@ namespace Kiwi.Editor
         }
     }
 }
+#endif
