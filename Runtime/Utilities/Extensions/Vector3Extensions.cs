@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Kiwi.Extensions
+namespace Kiwi.Utilities.Extensions
 {
     public static class Vector3Extensions
     {
@@ -30,7 +30,7 @@ namespace Kiwi.Extensions
 
             foreach (Vector3 otherPosition in otherPositions)
             {
-                var distance = (position - otherPosition).sqrMagnitude;
+                float distance = (position - otherPosition).sqrMagnitude;
 
                 if (distance < shortestDistance)
                 {
