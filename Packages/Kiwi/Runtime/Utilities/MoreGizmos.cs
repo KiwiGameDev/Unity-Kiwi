@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Kiwi.Helpers
+namespace Kiwi.Utilities
 {
     public static class MoreGizmos
     {

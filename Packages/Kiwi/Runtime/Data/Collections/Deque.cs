@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Kiwi.Extensions;
+using Kiwi.Utilities.Extensions;
 using UnityEngine;
 
 namespace Kiwi.Data.Collections

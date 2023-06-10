@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace Kiwi.Extensions
+namespace Kiwi.Utilities.Extensions
 {
     public static class LayerMaskExtensions
     {
         public static int MaskToLayer(this LayerMask mask)
         {
-            var bitmask = mask.value;
+            int bitmask = mask.value;
 
             Assert.IsFalse((bitmask & (bitmask - 1)) != 0,
                 "MaskToLayer() was passed an invalid mask containing multiple layers.");
@@ -16,7 +16,7 @@ namespace Kiwi.Extensions
 
             while (bitmask > 1)
             {
-                bitmask = bitmask >> 1;
+                bitmask >>= 1;
                 result++;
             }
 

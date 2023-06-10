@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Kiwi.Extensions
+namespace Kiwi.Utilities.Extensions
 {
     public static class QuaternionExtensions
     {

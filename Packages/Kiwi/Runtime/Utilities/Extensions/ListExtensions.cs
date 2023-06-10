@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
-namespace Kiwi.Extensions
+namespace Kiwi.Utilities.Extensions
 {
     public static class ListExtensions
     {

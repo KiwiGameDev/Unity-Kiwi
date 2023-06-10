@@ -4,7 +4,7 @@
 using UnityEditor;
 #endif
 
-namespace Kiwi.Helpers
+namespace Kiwi.Utilities
 {
     public static class MoreApplication
     {

@@ -1,10 +1,11 @@
 using System;
 using System.Diagnostics.Contracts;
 
-namespace Kiwi.Helpers
+namespace Kiwi.Utilities
 {
     public static class MoreMath
     {
+        public static readonly float APPROXIMATION_TOLERANCE = 0.000001f;
         public static readonly float TAU = (float) Math.PI * 2f;
         public static readonly float PI_HALF = (float) Math.PI / 2f;
 
