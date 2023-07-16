@@ -1,25 +1,27 @@
-using System;
-
 namespace Kiwi.Data
 {
-    public class Observable<T> where T : struct
+    public struct Observable<T> where T : struct
     {
-        public event Action<T> ValueChanged;
+        public delegate void OnValueChanged(T prevValue, T nextValue);
+
+        public event OnValueChanged ValueChanged;
 
         public T Value
         {
-            get => t;
+            get => value;
             set
             {
-                if (value.Equals(t))
+                if (Equals(this.value, value))
                     return;
 
-                t = value;
+                T previousValue = this.value;
 
-                ValueChanged?.Invoke(t);
+                this.value = value;
+
+                ValueChanged?.Invoke(previousValue, value);
             }
         }
 
-        T t;
+        T value;
     }
 }
