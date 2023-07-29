@@ -7,34 +7,35 @@ using Object = UnityEngine.Object;
 
 namespace Kiwi.Editor.Attributes
 {
-    [CustomPropertyDrawer(typeof(ShowIfAttribute))]
-    public class ShowIfPropertyDrawer : PropertyDrawer
+    [CustomPropertyDrawer(typeof(EnableIfAttribute))]
+    public class EnableIfPropertyDrawer : PropertyDrawer
     {
-        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-        {
-            return CanShow(property) ? base.GetPropertyHeight(property, label) : 0f;
-        }
-
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            if (CanShow(property))
+            if (CanEnable(property))
             {
                 EditorGUI.PropertyField(position, property);
             }
+            else
+            {
+                GUI.enabled = false;
+                EditorGUI.PropertyField(position, property);
+                GUI.enabled = true;
+            }
         }
 
-        bool CanShow(SerializedProperty serializedProperty)
+        bool CanEnable(SerializedProperty serializedProperty)
         {
             SerializedObject serializedObject = serializedProperty.serializedObject;
-            ShowIfAttribute showIfAttribute = (ShowIfAttribute) attribute;
+            EnableIfAttribute enableIfAttribute = (EnableIfAttribute) attribute;
 
-            if (showIfAttribute.EnumName != null)
+            if (enableIfAttribute.EnumName != null)
             {
-                if (!EvaluateEnum(serializedObject, showIfAttribute))
+                if (!EvaluateEnum(serializedObject, enableIfAttribute))
                     return false;
             }
 
-            string[] conditions = showIfAttribute.Conditions;
+            string[] conditions = enableIfAttribute.Conditions;
 
             if (conditions != null)
             {
@@ -45,7 +46,7 @@ namespace Kiwi.Editor.Attributes
             return true;
         }
 
-        static bool EvaluateEnum(SerializedObject serializedObject, ShowIfAttribute showIfAttribute)
+        static bool EvaluateEnum(SerializedObject serializedObject, EnableIfAttribute showIfAttribute)
         {
             SerializedProperty conditionalSerializedProp = serializedObject.FindProperty(showIfAttribute.EnumName);
             int conditionalEnumValueIndex = conditionalSerializedProp.enumValueIndex;
