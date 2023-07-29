@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 1993987562}
   - component: {fileID: 1993987561}
   - component: {fileID: 1993987560}
+  - component: {fileID: 1993987563}
   m_Layer: 0
   m_Name: AttributesTester
   m_TagString: Untagged
@@ -286,3 +287,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1993987563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993987559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3cac02a6e242d88a71b1e46e4b484b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sampleInt: 0
+  sampleFloat: 0
+  showIfAttributesTester: {fileID: 0}
+  enableIfAttributesTester: {fileID: 1993987560}
