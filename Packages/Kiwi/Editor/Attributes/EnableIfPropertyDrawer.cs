@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
-using Kiwi.Reflection.Extensions;
+using Kiwi.Reflection;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Kiwi.Editor.Attributes
+namespace Kiwi.Attributes.Editor
 {
     [CustomPropertyDrawer(typeof(EnableIfAttribute))]
     public class EnableIfPropertyDrawer : PropertyDrawer

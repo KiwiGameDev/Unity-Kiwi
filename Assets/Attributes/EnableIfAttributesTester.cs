@@ -1,4 +1,4 @@
-﻿using Kiwi.Editor.Attributes;
+﻿using Kiwi.Attributes;
 using UnityEngine;
 
 namespace Kiwi.Data

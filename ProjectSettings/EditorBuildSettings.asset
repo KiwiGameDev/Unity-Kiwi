@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DirtyFlag/Scenes/DirtyFlag.unity
     guid: 6ce23d54069f30f45b3cfe514e25efef
+  - enabled: 1
+    path: Assets/Attributes/Attributes.unity
+    guid: fda4fb3e13108f341bfb485b647fedf7
   m_configObjects: {}

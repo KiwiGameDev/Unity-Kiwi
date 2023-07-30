@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Kiwi.Editor.Attributes
+namespace Kiwi.Attributes.Editor
 {
     [CustomPropertyDrawer(typeof(ExpandableAttribute))]
     public class ExpandablePropertyDrawer : PropertyDrawer
