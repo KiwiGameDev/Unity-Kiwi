@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Kiwi.Editor.Attributes
+namespace Kiwi.Attributes
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = true)]
     public class ShowIfAttribute : PropertyAttribute

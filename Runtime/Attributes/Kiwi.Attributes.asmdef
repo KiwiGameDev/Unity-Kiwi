@@ -1,9 +1,7 @@
 {
-    "name": "Kiwi.Editor",
+    "name": "Kiwi.Attributes",
     "rootNamespace": "Kiwi",
-    "references": [
-        "GUID:9a3df3b329c5e08469a6a38f351e7c9a"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

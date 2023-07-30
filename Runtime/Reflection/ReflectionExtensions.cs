@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-namespace Kiwi.Reflection.Extensions
+namespace Kiwi.Reflection
 {
     public static class ReflectionExtensions
     {
